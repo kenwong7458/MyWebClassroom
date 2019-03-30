@@ -59,4 +59,12 @@ public class Course {
     public int getNumberOfAttachments() {
         return this.attachments.size();
     }
+
+    public boolean hasAttachment(String name) {
+        return this.attachments.containsKey(name);
+    }
+
+    public Attachment deleteAttachment(String name) {
+        return this.attachments.remove(name);
+    }
 }

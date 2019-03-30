@@ -18,4 +18,9 @@ public class IndexController {
     public String index() {
         return "redirect:/classroom/listCourse";
     }
+    
+    @RequestMapping("login")
+    public String login() {
+        return "login";
+    }
 }
